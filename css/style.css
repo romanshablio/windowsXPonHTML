@@ -19,6 +19,12 @@ nav {
 }
 
 .menu__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 100px;
   background-color: #1197ee;
   box-shadow: inset 0px 2px 5px #fff;
