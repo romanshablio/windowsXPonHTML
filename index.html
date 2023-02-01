@@ -10,23 +10,49 @@
     <link rel="stylesheet" href="css/modal.css">
     <script defer src="js/start_menu.js"></script>
     <script defer src="js/modal.js"></script>
+    <link rel="icon" type="image/png" href="img/start_icon.png">
     <script defer src="js/date-time.js"></script>
 </head>
 
 <body>
     <div class="main__desktop"></div>
     <div id="myComputer" class="my_computer_icon">Мой компьютер</div>
+    <div id="myGames" class="my_games_icon">Мои игры</div>
     <div id="computerWindow" class="computer__window">
         <div id="myComputerPanel" class="window__top">
 
             <div class="window__icon"></div>
             <div class="window__title">Мой компьютер</div>
-            <div id="clodeMyComputerButton" class="window__buttons"></div>
+            <div id="closeMyComputerButton" class="window__buttons"></div>
         </div>
+        <h2>Сборник программ и исполняемого кода</h2>
+        <ul>
+            <a target="_blank" href="https://github.com/romanshablio/todo-list-js.git">Список дел на JS в Git</a> <br>
+            <a target="_blank" href="../todo-list/index.html">Список сотрудников на JS</a>
+        </ul>
+        <ul>
+            <a target="_blank" href="https://github.com/romanshablio/stuff_list_js">Список сотрудников на JS в Git</a>
+            <br>
+            <a target="_blank" href="../stuff/index.html">Список сотрудников на JS</a>
+        </ul>
 
     </div>
+    <div id="gamesWindow" class="games__window">
+        <div id="myGamesFolder" class="games__folder">
 
-    <div id="startMenu" class="startMenu is-active">
+            <div class="games__icon"></div>
+            <div class="window__title">Мои игры</div>
+            <div id="closeGamesFolderButton" class="window__buttons"></div>
+        </div>
+        <h2>Игры</h2>
+        <ul>
+            <a target="_blank" href="https://github.com/romanshablio/finThePairGame_JS.git">Игра "Найди пару" на JS в
+                Git</a> <br>
+            <a target="_blank" href="../games/find_the_pair/index.html">Играть в "Найди пару"</a>
+        </ul>
+    </div>
+
+    <div id="startMenu" class="startMenu ">
         <div class="taskbar__top">
             <h2 class="windowsOwner">Владелец ПК</h2>
         </div>

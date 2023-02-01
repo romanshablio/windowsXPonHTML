@@ -89,7 +89,7 @@ button:focus {
 .computer__window {
   opacity: 0;
   position: relative;
-  left: 300px;
+  left: 400px;
   background-color: white;
   width: 350px;
   height: 400px;
@@ -140,9 +140,11 @@ button:focus {
 }
 
 .startMenu {
-  position: relative;
-  bottom: 180px;
-  left: -5px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -150,6 +152,12 @@ button:focus {
   width: 500px;
   background-color: #d3e5fa;
   border-radius: 10px;
+  z-index: -1;
+}
+
+.startMenu.is-active {
+  opacity: 1;
+  z-index: 1;
 }
 
 .startMenu::before {
@@ -244,6 +252,55 @@ button:focus {
   margin-top: 5px;
 }
 
-.is-active {
-  display: none;
+.my_games_icon {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/game.png);
+  background-size: 60px;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 10px;
+  padding-top: 60px;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+}
+
+.my_games_icon:hover {
+  text-decoration: underline;
+  color: #0c8dea;
+}
+
+.games__window {
+  opacity: 0;
+  position: absolute;
+  left: 100px;
+  top: 30px;
+  background-color: white;
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  border: 2px solid #245edb;
+  border-top: 0;
+}
+
+.games__window.active {
+  opacity: 1;
+}
+
+.games__icon {
+  width: 25px;
+  background-image: url(../img/game.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  margin-left: 3px;
+}
+
+.games__folder {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: url(../img/border.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
