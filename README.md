@@ -1,9 +1,18 @@
 # windowsXP on HTML
-Данный проект создан в рамках обучения и для развлечения. 
-Каждый может использовать его по своему усмотрению, без каких-либо ограничений.
-Всем добра!
 
+A small HTML/CSS project inspired by the Windows XP interface.
 
-## Автор: 
-- [ShablySoft/ Шаблий Роман/ https://shablysoft.ru] - разработчик
+The project was created for learning and entertainment. It can be used freely for experiments, practice, or modification.
 
+## Technologies
+
+- HTML.
+- CSS.
+
+## Running
+
+Open the project in a browser.
+
+## Author
+
+Roman Shably, ShablySoft.
